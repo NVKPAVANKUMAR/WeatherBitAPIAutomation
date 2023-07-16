@@ -1,6 +1,7 @@
 # API Test Automation Repository
 
-This repository contains a Java-based test automation framework for API testing, utilizing Rest Assured, TestNG, and Maven.
+This repository contains a Java-based test automation framework for API testing, utilizing Rest Assured, TestNG, and
+Maven.
 This communicates to open Weather Bit API which provides current Weather Data for multiple places in the world.
 
 ## Prerequisites
@@ -28,6 +29,7 @@ mvn clean install
 ## Test Reports & Artifacts:
 
 Test reports are generated automatically after each test run. The terminal will show output like this:
+
 ```shell
 Results :
 
@@ -40,7 +42,9 @@ Tests run: 11, Failures: 2, Errors: 0, Skipped: 0
 [INFO] BUILD FAILURE
 
 ```
-The detailed reports can be found in the `/target/surefire-reports` directory. Open the `index.html` file in a web browser to view the detailed test results.
+
+The detailed reports can be found in the `/target/surefire-reports` directory. Open the `index.html` file in a web
+browser to view the detailed test results.
 
 ## Tools and Technology used:
 
@@ -51,12 +55,14 @@ The detailed reports can be found in the `/target/surefire-reports` directory. O
 - Log4j API(1.2.17)
 - API used: https://www.weatherbit.io/api/swaggerui/weather-api-v2#/
 
-
 ## Project Structure:
 
-- `src/main/java/com.qa/framework/TestBase.java` : This is a super class of all classes and it loads the configuration file.
-- `src/main/java/com.qa/framework/Utility.java` : This contains various utility methods for parsing and reading the response.
-- `src/main/java/com.qa/apidefinitions/WeatherAPIClient.java` This contains methods to construct and execute the API request.
+- `src/main/java/com.qa/framework/TestBase.java` : This is a super class of all classes and it loads the configuration
+  file.
+- `src/main/java/com.qa/framework/Utility.java` : This contains various utility methods for parsing and reading the
+  response.
+- `src/main/java/com.qa/apidefinitions/WeatherAPIClient.java` This contains methods to construct and execute the API
+  request.
 - `src/test/java/com.qa.test`: The test classes can be found in the directory.
 - `src/main/resources`: Directory contains properties files with various paramaeters for requests and logging.
 - `testng.xml` : This is a testNG configuration file.
@@ -65,5 +71,7 @@ The detailed reports can be found in the `/target/surefire-reports` directory. O
 ## Known Bugs
 
 Following test cases will fail due to the bugs in WeatherbitAPI
+
 1. InvalidPostcodeTest -> Some response is returned instead of error message
-2. ValidateMultipleLocationResults -> Weather data of only one place is returned eventhough the provided post code has multiple locations
+2. ValidateMultipleLocationResults -> Weather data of only one place is returned eventhough the provided post code has
+   multiple locations

@@ -4,9 +4,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 /**
- *
  * @author NVK PAVANKUMAR This class provides various utility methods
- *
  */
 public class Utility extends TestBase {
 

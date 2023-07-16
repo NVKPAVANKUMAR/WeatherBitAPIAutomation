@@ -48,3 +48,7 @@ tmp/
 local.properties
 .loadpath
 .idea
+target
+allure-results
+Result.log
+test-report

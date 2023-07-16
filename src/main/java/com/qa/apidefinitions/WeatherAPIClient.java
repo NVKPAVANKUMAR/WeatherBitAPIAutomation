@@ -1,24 +1,21 @@
 package com.qa.apidefinitions;
 
-import static io.restassured.RestAssured.given;
-
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-
 import com.qa.framework.TestBase;
-
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
+import static io.restassured.RestAssured.given;
+
 /**
- *
  * @author NVK PAVANKUMAR WeatherAPIClient acts as client responsible for constructing
  * the request URL and executing the weather API using Get method.
- *
  */
 public class WeatherAPIClient extends TestBase {
 
@@ -49,7 +46,7 @@ public class WeatherAPIClient extends TestBase {
      * logging.
      *
      * @return requestSpecification This is newly built request based on the
-     *         parameters.
+     * parameters.
      * @throws FileNotFoundException
      */
 

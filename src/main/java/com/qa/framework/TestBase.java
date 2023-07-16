@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- *
  * @author NVK PAVANKUMAR This is a super class for all the classes in this project.
  */
 public class TestBase {
