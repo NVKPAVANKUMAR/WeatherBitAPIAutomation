@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Validate Weatherbit API" verbose="1">
+
+
+    <test
+            name="Verify current Weather Data for multiple places in the world is received based on PostCode">
+        <classes>
+            <class name="com.qa.test.WeatherAPIPostCodeTest" />
+        </classes>
+    </test>
+    <test
+            name="Verify current Weather Data for multiple places in the world is received based on Lat and Lon">
+        <classes>
+            <class name="com.qa.test.WeatherAPILatLongTest" />
+        </classes>
+    </test>
+
+</suite>
